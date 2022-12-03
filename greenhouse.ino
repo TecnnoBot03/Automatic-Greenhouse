@@ -24,9 +24,9 @@ void loop()
   digitalWrite(TRIG, LOW);
   DURACION = pulseIn(ECO, HIGH);
   DISTANCIA = DURACION / 58.2;
-  Serial.println(DISTANCIA);
-  Serial.print(" ")
-  Serial.println(humedad);
+  int porcentajeHumedad = map(humedad, 1023, 200, 0, 100);
+  Serial.println(porcentajeHumedad + "% de humedad");
+  Serial.println(DISTANCIA + "cm");
   delay(200);
 
 
