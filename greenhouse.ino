@@ -28,11 +28,11 @@ void loop()
   Serial.print(DISTANCIA);
   Serial.println("cm");
   if (porcentajeHumedad < 60) {
-    digitalWrite(bomba, HIGH);
+    digitalWrite(bomba, LOW);
     Serial.println("SI");
   }
   else {
-    digitalWrite(bomba, LOW);
+    digitalWrite(bomba, HIGH);
     Serial.println("NO");
   }
   delay(200);
