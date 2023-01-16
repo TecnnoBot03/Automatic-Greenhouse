@@ -4,6 +4,7 @@ int bomba = 4;
 int humedadSuelo = A0;    
 int DURACION;
 int DISTANCIA;
+int temperatura;
 
 void setup()
 {
